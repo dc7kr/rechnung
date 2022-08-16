@@ -1,0 +1,31 @@
+%% Copyright 2010 T Kazimiers
+%%
+%% This file is part of the `insurance' packet
+%%
+
+% This file requires docstrip version 2.4 available from
+% ftp.dante.de tex-archive/macros/latex/unpacked/docstrip.tex
+\input docstrip
+\keepsilent
+
+\Msg{Generating style file insurance.sty for the insurance package:}
+\generateFile{insurance.sty}{f}{\from{insurance.dtx}{package}}
+\Msg{Generating driver file for manual insurance.drv:}
+\generateFile{insuranceman.drv}{f}{\from{insurance.dtx}{driver,manual}}
+\Msg{Generating driver file for documentation insurance.drv:}
+\generateFile{insurance.drv}{f}{\from{insurance.dtx}{driver}}
+
+
+\Msg{***********************************************************}
+\Msg{*}
+\Msg{* To finish the installation you have to move the file}
+\Msg{* insurance.sty into a directory searched by TeX:}
+\Msg{*}
+\Msg{* Optionally you caan copy the file insurance.dtx into a}
+\Msg{* directory searched by TeX, so that users can print}
+\Msg{* a copy of the documentation.}
+\Msg{*}
+\Msg{* Happy TeXing}
+\Msg{***********************************************************}
+
+\endbatchfile
